@@ -1,0 +1,135 @@
+*,*:before, *:after
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+	text-decoration: none
+	list-style-type: none
+	font-family: 'Inter', sans-serif
+	font-weight: 400
+	font-size: 14px
+	color: #131313
+
+.container
+	max-width: 1200px
+	margin: 0 auto
+
+.header__inner
+	display: flex
+	justify-content: space-between
+.menu
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-right: 73px
+	&__list
+		display: flex
+		justify-content: center
+		gap: 14px
+	&__link
+		padding: 42px 22px 41px 17px
+		text-transform: uppercase
+		transition: 0.5s all
+		&:hover
+			color: #fff
+			background-color: #131313
+
+.bike
+	padding: 97px 0 150px
+	&__inner
+		display: flex
+		justify-content: space-between
+	&__title
+		font-size: 64px
+		font-weight: 700
+		text-align: left
+		margin-top: 72px
+	&__subtitle
+		margin-top: 5px
+		font-size: 32px
+		color: #6F6F6F
+		margin-bottom: 60px
+	&__text
+		margin-bottom: 20px
+		max-width: 420px
+		line-height: 16.8px
+		text-align: left
+	&__link
+		display: inline-block
+		margin-top: 60px
+		max-width: 420px
+		height: 80px
+		background-color: #131313
+		color: #fff
+		font-size: 20px
+		letter-spacing: 22px
+		padding: 28px 81px
+		transition: 0.3s all ease
+		&:hover
+			background-color: #FF4040
+
+	&__column-slider
+		margin-left: 31px
+		flex-basis: 630px
+		max-width: 630px
+
+.bike__slider .slick-dots
+	right: 0
+	top: 52px
+.slick-dots
+	position: absolute
+
+.slick-dots li + li
+	padding-top: 10px
+
+.slick-dots button
+	font-size: 0
+	padding: 0
+	border: none
+	background-color: #131313
+	width: 2px
+	height: 25px
+	border-radius: 7px
+	cursor: pointer
+	transition: .3s all
+
+.slick-dots button:hover, .slick-active button
+	background-color: #ff4040
+
+.bike__list
+	margin-top: 25px
+	display: flex
+	justify-content: space-around
+	&-item
+		min-height: 58px
+		display: flex
+		flex-direction: column
+		align-items: center
+		text-align: center
+		min-width: 160px
+	&-num
+		font-weight: 700
+		text-transform: uppercase
+	&-text
+		text-transform: lowercase
+		font-size: 12px
+		margin: auto 0
+
+.info
+	padding-bottom: 150px
+	&__inner
+		display: flex
+	&__img
+		flex-basis: 570px
+		margin-right: 60px
+	&__list
+		flex-basis: 490px
+	&__item + &__item
+		padding-top: 50px
+	&__item-title
+		margin-bottom: 10px
+		text-transform: uppercase
+		font-size: 16px
+		font-weight: 700
+	&__item-text
+		max-width: 450px
+		line-height: 17px
